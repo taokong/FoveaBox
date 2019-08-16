@@ -38,7 +38,7 @@ Please check [GETTING_STARTED.md](GETTING_STARTED.md) for detailed instructions.
 
 
 ## Main Results
-### Results on R50-FPN with backbone
+### Results on R50/101-FPN with backbone
 
 | Backbone  | Style   | align  | Lr schd | Mem (GB) | Train time (s/iter) | Inf time (fps) | box AP | Download |
 |:---------:|:-------:|:-------:|:-------:|:--------:|:-------------------:|:--------------:|:------:|:--------:|
