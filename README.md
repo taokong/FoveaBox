@@ -1,6 +1,6 @@
 # FoveaBox: Beyond Anchor-based Object Detector
 
-This repo is a official implementation of "FoveaBox: FoveaBox: Beyond Anchor-based Object Detector" on COCO object detection based on open-mmlab's mmdetection. Many thanks to mmdetection for their simple and clean framework.
+This repo is a official implementation of "FoveaBox: Beyond Anchor-based Object Detector" on COCO object detection based on open-mmlab's mmdetection. Many thanks to mmdetection for their simple and clean framework.
 
 FoveaBox is a state-of-the-art visual object detection system for object detection framework, as presented in our paper [https://arxiv.org/abs/1904.03797](https://arxiv.org/abs/1904.03797):
 
@@ -18,11 +18,23 @@ This FoveaBox implementation is based on [mmdetection](https://github.com/open-m
 Please check [INSTALL.md](INSTALL.md) for installation instructions.
 
 
-## Inference
-The inference command line on coco minival split:
+## Train and inference
+The FoveaBox config is in [configs/foveabox](configs/foveabox).
 
+### Inference
+    # single-gpu testing
+    python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [--out ${RESULT_FILE}] --eval bbox [--show]
+    
     # multi-gpu testing
-    ./tools/dist_test.sh configs/foveabox/fovea_xxx.py ${CHECKPOINT_FILE} ${GPU_NUM} [--out ${RESULT_FILE}] [--eval bbox] 
+    ./tools/dist_test.sh ${CONFIG_FILE} ${CHECKPOINT_FILE} ${GPU_NUM} [--out ${RESULT_FILE}] --eval bbox
+
+### Training
+    # single-gpu training
+    python tools/train.py ${CONFIG_FILE}
+    # multi-gpu training
+    ./tools/dist_train.sh ${CONFIG_FILE} ${GPU_NUM} [optional arguments]
+    
+Please check [GETTING_STARTED.md](GETTING_STARTED.md) for detailed instructions.
 
 
 ## Main Results
@@ -34,7 +46,7 @@ The inference command line on coco minival split:
 | R-50      | pytorch   | N      | 2x      | -        | 0.396               | 13.5           | 36.9   | [model](sss) |
 | R-50      | pytorch   | Y      | 2x      | -        | -                   | -              | 36.9   | [model](sss) |
 | R-101     | pytorch   | N      | 1x      | 9.4      | 0.712               | 11.5           | 38.5   | [model](https://drive.google.com/file/d/1Xb6hDUquGKB8ad7DigrF8K9sX8xoZigh/view?usp=sharing) |
-| R-101     | pytorch   |        | 2x      | -        | -                   | -              | 39.1   | [model](sss) |
+| R-101     | pytorch   | N      | 2x      | -        | -                   | -              | 39.1   | [model](sss) |
 | R-101     | pytorch   | N      | 1x      | -        | 0.558               | 11.6           | 39.1   | [model](sss) |
 
 [1] *1x and 2x mean the model is trained for 12 and 24 epochs, respectively.* \
