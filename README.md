@@ -30,6 +30,7 @@ The FoveaBox config is in [configs/foveabox](configs/foveabox).
 ### Training
     # single-gpu training
     python tools/train.py ${CONFIG_FILE}
+    
     # multi-gpu training
     ./tools/dist_train.sh ${CONFIG_FILE} ${GPU_NUM} [optional arguments]
     
@@ -42,8 +43,8 @@ Please check [GETTING_STARTED.md](GETTING_STARTED.md) for detailed instructions.
 | Backbone  | Style   | align  | Lr schd | Mem (GB) | Train time (s/iter) | Inf time (fps) | box AP | Download |
 |:---------:|:-------:|:-------:|:-------:|:--------:|:-------------------:|:--------------:|:------:|:--------:|
 | R-50      | pytorch   | N      | 1x      | 5.7      | 0.450               | 13.5           | 36.5   | [model](https://drive.google.com/file/d/19eQNnctoC1VTcP2AKdCryQGjb6Dzq62r/view?usp=sharing) |
-| R-50      | pytorch   | N      | 2x      | -        | 0.450               | 13.5           | 36.9   | [model](https://drive.google.com/file/d/1W-9DrNQcaw4vaLLON8GLe86pfBXztbWR/view?usp=sharing) |
-| R-50      | pytorch   | Y      | 2x      | -        | 0.480               | 14.4           | 37.9   | [model](https://drive.google.com/file/d/1RtTizixUDqd7X-PifTI7rseXZ1Q8YaAf/view?usp=sharing) |
+| R-50      | pytorch   | N      | 2x      | -        | -                   |                | 36.9   | [model](https://drive.google.com/file/d/1W-9DrNQcaw4vaLLON8GLe86pfBXztbWR/view?usp=sharing) |
+| R-50      | pytorch   | Y      | 2x      | -        | -                   |                | 37.9   | [model](https://drive.google.com/file/d/1RtTizixUDqd7X-PifTI7rseXZ1Q8YaAf/view?usp=sharing) |
 | R-101     | pytorch   | N      | 1x      | 9.4      | 0.712               | 11.5           | 38.5   | [model](https://drive.google.com/file/d/1Xb6hDUquGKB8ad7DigrF8K9sX8xoZigh/view?usp=sharing) |
 | R-101     | pytorch   | N      | 2x      | -        | -                   | -              | 38.5   | [model](https://drive.google.com/file/d/1ToZyqAxjWIZ4N8SDL4gufmkA-Wjz_VUW/view?usp=sharing) |
 | R-101     | pytorch   | Y      | 2x      | -        | -               | -           | -   | [model](sss) |
