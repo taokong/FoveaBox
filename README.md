@@ -11,7 +11,7 @@ Different from previous anchor-based methods, FoveaBox directly learns the objec
   <p>FoveaBox detection process.</p>
 </div>
 
-## For a installation 
+## Installation 
 This FoveaBox implementation is based on [mmdetection](https://github.com/open-mmlab/mmdetection). Therefore the installation is the same as original mmdetection.
 
 Please check [INSTALL.md](INSTALL.md) for installation instructions.
