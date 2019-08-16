@@ -7,8 +7,8 @@ FoveaBox is an accurate, flexible and completely anchor-free object detection sy
 Different from previous anchor-based methods, FoveaBox directly learns the object existing possibility and the bounding box coordinates without anchor reference. This is achieved by: (a) predicting category-sensitive semantic maps for the object existing possibility, and (b) producing category-agnostic bounding box for each position that potentially contains an object.
 
 <div align="center">
-  <img src="demo/foveabox.jpg" width="500px" />
-  <p>FoveaBox.</p>
+  <img src="demo/foveabox.jpg" width="300px" />
+  <p>FoveaBox detection process.</p>
 </div>
 
 ## For a installation 
