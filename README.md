@@ -52,7 +52,8 @@ Please check [GETTING_STARTED.md](GETTING_STARTED.md) for detailed instructions.
 [1] *1x and 2x mean the model is trained for 12 and 24 epochs, respectively.* \
 [2] *Align means utilizing deformable convolution to align the cls branch.* \
 [3] *All results are obtained with a single model and without any test time data augmentation.*\
-[4] *We use 4 NVIDIA Tesla V100 GPUs for training.*
+[4] *We use 4 NVIDIA Tesla V100 GPUs for training.*\
+
 Any pull requests or issues are welcome.
 
 ## Citations
