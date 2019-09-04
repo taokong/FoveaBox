@@ -32,14 +32,14 @@ b. Install PyTorch stable or nightly and torchvision following the [official ins
 conda install pytorch torchvision -c pytorch
 ```
 
-c. Clone the mmdetection repository.
+c. Clone the FoveaBox repository.
 
 ```shell
-git clone https://github.com/open-mmlab/mmdetection.git
-cd mmdetection
+git clone https://github.com/taokong/FoveaBox.git
+cd FoveaBox
 ```
 
-d. Install mmdetection (other dependencies will be installed automatically).
+d. Install FoveaBox (other dependencies will be installed automatically).
 
 ```shell
 python setup.py develop
@@ -51,7 +51,7 @@ Note:
 1. The git commit id will be written to the version number with step d, e.g. 0.6.0+2e7045c. The version will also be saved in trained models.
 It is recommended that you run step d each time you pull some updates from github. If C/CUDA codes are modified, then this step is compulsory.
 
-2. Following the above instructions, mmdetection is installed on `dev` mode, any local modifications made to the code will take effect without the need to reinstall it (unless you submit some commits and want to update the version number).
+2. Following the above instructions, FoveaBox is installed on `dev` mode, any local modifications made to the code will take effect without the need to reinstall it (unless you submit some commits and want to update the version number).
 
 ### Another option: Docker Image
 
@@ -68,7 +68,7 @@ It is recommended to symlink the dataset root to `$MMDETECTION/data`.
 If your folder structure is different, you may need to change the corresponding paths in config files.
 
 ```
-mmdetection
+FoveaBox
 ├── mmdet
 ├── tools
 ├── configs

@@ -40,14 +40,16 @@ Please check [GETTING_STARTED.md](GETTING_STARTED.md) for detailed instructions.
 ## Main Results
 ### Results on R50/101-FPN with backbone 
 
-| Backbone  | Style   | align  | Lr schd | Mem (GB) | Train time (s/iter) | Inf time (fps) | box AP | Download |
-|:---------:|:-------:|:-------:|:-------:|:--------:|:-------------------:|:--------------:|:------:|:--------:|
-| R-50      | pytorch   | N      | 1x      | 5.7      | 0.450               | 13.5           | 36.5   | [model](https://drive.google.com/file/d/19eQNnctoC1VTcP2AKdCryQGjb6Dzq62r/view?usp=sharing) |
-| R-50      | pytorch   | N      | 2x      | -        | -                   |                | 36.9   | [model](https://drive.google.com/file/d/1W-9DrNQcaw4vaLLON8GLe86pfBXztbWR/view?usp=sharing) |
-| R-50      | pytorch   | Y      | 2x      | -        | -                   |                | 37.9   | [model](https://drive.google.com/file/d/1RtTizixUDqd7X-PifTI7rseXZ1Q8YaAf/view?usp=sharing) |
-| R-101     | pytorch   | N      | 1x      | 9.4      | 0.712               | 11.5           | 38.5   | [model](https://drive.google.com/file/d/1Xb6hDUquGKB8ad7DigrF8K9sX8xoZigh/view?usp=sharing) |
-| R-101     | pytorch   | N      | 2x      | -        | -                   | -              | 38.5   | [model](https://drive.google.com/file/d/1ToZyqAxjWIZ4N8SDL4gufmkA-Wjz_VUW/view?usp=sharing) |
-| R-101     | pytorch   | Y      | 2x      | -        | -               | -           | -   | [model](sss) |
+| Backbone  | Style   |  align  | ms-train| Lr schd | Mem (GB) | Train time (s/iter) | Inf time (fps) | box AP | Download |
+|:---------:|:-------:|:-------:|:-------:|:-------:|:--------:|:-------------------:|:--------------:|:------:|:--------:|
+| R-50      | pytorch | N       | N       | 1x      | 5.7      | 0.450               | 13.5           | 36.5   | [model](https://drive.google.com/file/d/19eQNnctoC1VTcP2AKdCryQGjb6Dzq62r/view?usp=sharing) |
+| R-50      | pytorch | N       | N       | 2x      | -        | -                   |                | 36.9   | [model](https://drive.google.com/file/d/1W-9DrNQcaw4vaLLON8GLe86pfBXztbWR/view?usp=sharing) |
+| R-50      | pytorch | Y       | N       | 2x      | -        | -                   |                | 37.9   | [model](https://drive.google.com/file/d/1RtTizixUDqd7X-PifTI7rseXZ1Q8YaAf/view?usp=sharing) |
+| R-50      | pytorch | Y       | Y       | 2x      | -        | -                   |                | 40.1   | [model](https://drive.google.com/file/d/1bHwmP3Uy-lFUifAyzkWykZTkYY-v-nEN/view?usp=sharing) |
+| R-101     | pytorch | N       | N       | 1x      | 9.4      | 0.712               | 11.5           | 38.5   | [model](https://drive.google.com/file/d/1Xb6hDUquGKB8ad7DigrF8K9sX8xoZigh/view?usp=sharing) |
+| R-101     | pytorch | N       | N       | 2x      | -        | -                   | -              | 38.5   | [model](https://drive.google.com/file/d/1ToZyqAxjWIZ4N8SDL4gufmkA-Wjz_VUW/view?usp=sharing) |
+| R-101     | pytorch | Y       | N       | 2x      | -        | -                   | -              | 39.4   | [model](https://drive.google.com/file/d/1n34MNGfgrMmJdpT2xAaEQOw8GJhTd1z8/view?usp=sharing) |
+| R-101     | pytorch | Y       | Y       | 2x      | -        | -                   | -              | 41.9   | [model](https://drive.google.com/file/d/1ZQAsW9SxMdCTX3_pjIIHotg0yDT2wy34/view?usp=sharing) |
 
 [1] *1x and 2x mean the model is trained for 12 and 24 epochs, respectively.* \
 [2] *Align means utilizing deformable convolution to align the cls branch.* \
