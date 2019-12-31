@@ -2,6 +2,9 @@
 
 This repo is a official implementation of "FoveaBox: Beyond Anchor-based Object Detector" on COCO object detection based on open-mmlab's mmdetection. Many thanks to mmdetection for their simple and clean framework.
 
+## News
+FoveaBox is supported by the official mmdetection repo [here](https://github.com/open-mmlab/mmdetection/tree/master/configs/foveabox). Thanks again for open-mmlab's work on open source projects.
+
 ## Introduction
 FoveaBox is an accurate, flexible and completely anchor-free object detection system for object detection framework, as presented in our paper [https://arxiv.org/abs/1904.03797](https://arxiv.org/abs/1904.03797):
 Different from previous anchor-based methods, FoveaBox directly learns the object existing possibility and the bounding box coordinates without anchor reference. This is achieved by: (a) predicting category-sensitive semantic maps for the object existing possibility, and (b) producing category-agnostic bounding box for each position that potentially contains an object.
@@ -11,8 +14,6 @@ Different from previous anchor-based methods, FoveaBox directly learns the objec
   <p>FoveaBox detection process.</p>
 </div>
 
-## News
-FoveaBox is supported by the official mmdetection repo [here](https://github.com/open-mmlab/mmdetection/tree/master/configs/foveabox). Thanks again for open-mmlab's work on open source projects. We suggest to directly use the mmdetection's version since it is always up-to-date.
 
 ## Installation 
 This FoveaBox implementation is based on [mmdetection](https://github.com/open-mmlab/mmdetection). Therefore the installation is the same as original mmdetection.
