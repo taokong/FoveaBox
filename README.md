@@ -10,6 +10,7 @@ Different from previous anchor-based methods, FoveaBox directly learns the objec
   <img src="demo/foveabox.jpg" width="300px" />
   <p>FoveaBox detection process.</p>
 </div>
+
 ## News
 FoveaBox is supported by the official mmdetection repo [here](https://github.com/open-mmlab/mmdetection/tree/master/configs/foveabox). Thanks again for open-mmlab's work on open source projects. We suggest to directly use the mmdetection's version since it is always up-to-date.
 
