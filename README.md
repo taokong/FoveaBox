@@ -67,8 +67,9 @@ Please consider citing our paper in your publications if the project helps your 
 ```
 @article{kong2019foveabox,
   title={FoveaBox: Beyond Anchor-based Object Detector},
-  author={Kong, Tao and Sun, Fuchun and Liu, Huaping and Jiang, Yuning and Shi, Jianbo},
-  journal={arXiv preprint arXiv:1904.03797},
-  year={2019}
+  author={Kong, Tao and Sun, Fuchun and Liu, Huaping and Jiang, Yuning and Li, Lei and Shi, Jianbo},
+  journal={IEEE Transactions on Image Processing},
+  pages={7389--7398},
+  year={2020}
 }
 ```
